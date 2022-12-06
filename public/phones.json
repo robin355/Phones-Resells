@@ -1,0 +1,80 @@
+[
+    {
+        "name": "Realme 10 Pro+",
+        "categoryName": "Realme Phone",
+        "price": 45000,
+        "img": "https://fdn2.gsmarena.com/vv/bigpic/realme-10-pro-plus.jpg",
+        "newPrice": 35000,
+        "color": "Black",
+        "size": 6.7,
+        "battery": 5000,
+        "ram": 8,
+        "location": "MogBazar",
+        "usedYear": 1.5
+    },
+    {
+        "name": "Realme C35",
+        "categoryName": "Realme Phone",
+        "price": 25000,
+        "img": "https://fdn2.gsmarena.com/vv/bigpic/realme-c35.jpg",
+        "newPrice": 20000,
+        "color": "Black",
+        "size": 6.6,
+        "battery": 5000,
+        "ram": 6,
+        "location": "MaliBag",
+        "usedYear": 2
+    },
+    {
+        "name": "Samsung Galaxy S10",
+        "categoryName": "Samsung Phone",
+        "price": 31999,
+        "img": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s10.jpg",
+        "newPrice": 19000,
+        "color": "Glden",
+        "size": "5.5 inches",
+        "battery": 5000,
+        "ram": 6,
+        "location": "farmgate",
+        "usedYear": 1
+    },
+    {
+        "name": "Samsung Galaxy A13",
+        "categoryName": "Samsung Phone",
+        "price": 20999,
+        "img": "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a13.jpg",
+        "newPrice": 13000,
+        "color": "Black",
+        "size": "6.6 inches",
+        "battery": 5000,
+        "ram": 4,
+        "location": "Mohakhali",
+        "usedYear": 1.5
+    },
+    {
+        "name": "Xiaomi Redmi Note 11",
+        "categoryName": "Redmi Phone",
+        "price": 35999,
+        "img": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-11-global.jpg",
+        "newPrice": 30000,
+        "color": "Midnight Black",
+        "size": 6.56,
+        "battery": 5000,
+        "ram": 6,
+        "location": "Bannani",
+        "usedYear": 1
+    },
+    {
+        "name": "Xiaomi Redmi Note 12 Pro+",
+        "categoryName": "Redmi Phone",
+        "price": 50000,
+        "img": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-redmi-note-12-pro-plus.jpg",
+        "newPrice": 35000,
+        "color": "Black",
+        "size": 6.67,
+        "battery": 5000,
+        "ram": 8,
+        "location": "Badda",
+        "usedYear": 1
+    }
+]
