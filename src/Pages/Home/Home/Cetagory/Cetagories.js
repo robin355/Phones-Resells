@@ -13,9 +13,18 @@ const Cetagories = () => {
 
 
     return (
-        <div className='mt-10'>
-            <h3 className='text-orange-600 font-bold text-3xl'>Cetagory</h3>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-5 '>
+        <div className='mt-6'>
+
+            <div className='flex gap-3 justify-center'>
+                <div>
+                    <input type="text" placeholder="Search Cetagorie" className="input input-bordered w-full" />
+                </div>
+                <div>
+                    <button className="btn btn-secondary ">Searching</button>
+                </div>
+            </div>
+
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-10 '>
                 {
                     phones.map(phone => <Cetagory key={phone._id} phone={phone}></Cetagory>)
                 }
