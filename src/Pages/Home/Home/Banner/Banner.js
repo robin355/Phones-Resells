@@ -9,7 +9,7 @@ const Banner = () => {
                 <div className="max-w-md">
                     <h1 className="mb-5 text-5xl font-bold">Phones Resells</h1>
                     <p className="mb-5">Global phone supports each of these reseller plans with sales training, collateral, quote tools, installation and ongoing support.</p>
-                    <button className="btn btn-primary">Get Started</button>
+                    <button className="btn btn-secondary">Get Started</button>
                 </div>
             </div>
         </div>
