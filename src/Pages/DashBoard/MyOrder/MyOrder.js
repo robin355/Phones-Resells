@@ -19,10 +19,25 @@ const MyOrder = () => {
     return (
         <div>
             <h3 className="text-3xl mb-3">My Orders</h3>
-            <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
-                {
-                    bookings.map(book => <Order key={book._id} book={book}></Order>)
-                }
+
+            <div className="overflow-x-auto w-full">
+                <table className="table w-full">
+                    <thead>
+                        <tr>
+                            <th>Product Image</th>
+                            <th>Product Name</th>
+                            <th>Price</th>
+                            <th>Pay Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {
+                            bookings.map(book => <Order key={book._id} book={book}></Order>)
+                        }
+
+                    </tbody>
+
+                </table>
             </div>
 
         </div>

@@ -5,18 +5,30 @@ const Order = ({ book }) => {
     console.log(book)
     const { IteamName, image, price, _id } = book;
     return (
-        <div className="card card-compact bg-base-100 shadow-xl">
-            <figure><img src={image} alt="Shoes" /></figure>
-            <div className="card-body">
-                <h2 className="card-title">{IteamName}</h2>
-                <p>{price}</p>
-                <div className="card-actions justify-end">
-                    <Link to={`/dashboard/orders/${_id}`}>
-                        <button className="btn btn-primary">Payment Detailes</button>
-                    </Link>
+        <tr>
+            <td>
+                <div className="flex items-center space-x-3">
+                    <div className="avatar">
+                        <div className="mask mask-squircle w-12 h-12">
+                            <img src={image} alt="Avatar Tailwind CSS Component" />
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </td>
+            <td>
+                {IteamName}
+            </td>
+            <td>{price}</td>
+            <th>
+
+                {price && !book?.paid && <Link to={`/dashboard/payment/${_id}`}>
+                    <button className="btn btn-ghost btn-xs">Pay</button>
+                </Link>}
+                {
+                    price && book.paid && <span className='text-primary'>Paid</span>
+                }
+            </th>
+        </tr>
     );
 };
 

@@ -1,6 +1,8 @@
-import { useState, useEffect } from 'react';
+import React from 'react';
+import { useEffect } from 'react';
+import { useState } from 'react';
 
-const UseToken = (email) => {
+const USeToken = (email) => {
     const [token, setToken] = useState('')
     useEffect(() => {
         fetch(`https://books-reseles-server.vercel.app/jwt?email=${email}`)
@@ -13,6 +15,6 @@ const UseToken = (email) => {
             })
     }, [email])
     return [token]
-}
+};
 
-export default UseToken;
+export default USeToken;

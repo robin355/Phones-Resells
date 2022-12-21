@@ -3,7 +3,8 @@ import { useForm } from 'react-hook-form';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 import { toast } from 'react-hot-toast';
-import UseToken from '../../Hooks/UseToken';
+import USeToken from '../../Hook/USeToken';
+
 
 
 const Signup = () => {
@@ -12,7 +13,7 @@ const Signup = () => {
     const [seller, setSeller] = useState(false)
     const [buyer, setBuyer] = useState(false)
     const [tokenEmail, setTokenEmail] = useState('')
-    const [token] = UseToken(tokenEmail)
+    const [token] = USeToken(tokenEmail)
     const navigate = useNavigate()
     const [SignupError, setSignupError] = useState('')
     if (token) {

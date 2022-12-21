@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import { Navigate, useLocation } from 'react-router-dom';
 import { AuthContext } from '../Context/AuthProvider/AuthProvider';
-import UserAdmin from '../Hooks/UserAdmin';
+import UserAdmin from '../Hook/UserAdmin';
+
 import Loading from '../Pages/Loading/Loading';
 
 

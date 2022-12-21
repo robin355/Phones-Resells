@@ -3,7 +3,8 @@ import Navbar from '../Share/Navbar/Navbar';
 import { Link, Outlet } from 'react-router-dom'
 
 import { AuthContext } from '../Context/AuthProvider/AuthProvider';
-import UserAdmin from '../Hooks/UserAdmin';
+import UserAdmin from '../Hook/UserAdmin';
+
 
 const DashBoardLayout = () => {
     const { user } = useContext(AuthContext)

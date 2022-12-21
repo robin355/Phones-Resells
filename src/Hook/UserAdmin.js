@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const UserAdmin = (email) => {
     const [isAdmin, setisAdmin] = useState(false)
     const [isAdminLoading, setIsLoading] = useState(true)
     useEffect(() => {
         if (email) {
-            fetch(`https://books-reseles-server.vercel.app/Allusers/admin/${email}`)
+            fetch(`http://localhost:5000/Allusers/admin/${email}`)
                 .then(res => res.json())
                 .then(data => {
                     console.log(data)
