@@ -49,8 +49,8 @@ const BookModal = ({ name, newPrice, img }) => {
                         <input name='email' type="email" placeholder="Your Email" defaultValue={user?.email} readOnly className="input input-bordered w-full" />
                         <input name='iteamName' type="email" placeholder="Your Email" defaultValue={name} readOnly className="input input-bordered w-full" />
                         <input name='price' type="email" placeholder="Your Email" defaultValue={newPrice} readOnly className="input input-bordered w-full" />
-                        <input name='phone' type="text" placeholder="Your Phone" className="input input-bordered w-full" />
-                        <input name='location' type="text" placeholder="metting Location" className="input input-bordered w-full" />
+                        <input name='phone' type="text" placeholder="Your Phone" className="input input-bordered w-full" required />
+                        <input name='location' type="text" placeholder="metting Location" className="input input-bordered w-full" required />
                         <input type="submit" className='w-full btn btn-accent' value="Submit" />
                     </form>
                 </div>
