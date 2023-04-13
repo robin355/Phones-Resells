@@ -10,7 +10,7 @@ const Navbar = () => {
             .catch(err => console.log(err))
     }
     return (
-        <div className="navbar bg-primary text-primary-content">
+        <div className="navbar bg-base-300">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -19,6 +19,7 @@ const Navbar = () => {
                     <ul tabIndex={1} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-primary rounded-box w-52">
                         <li><Link to='/home'>Home</Link></li>
                         <li><Link to='/blogs'>Blogs</Link></li>
+                        <li><Link to='/contact'>Contact</Link></li>
 
                         {
                             user?.uid ?
@@ -30,12 +31,13 @@ const Navbar = () => {
                         }
                     </ul>
                 </div>
-                <Link to='/' className="btn btn-ghost normal-case text-xl">Phones Resells</Link>
+                <Link to='/' className="normal-case text-xl">Phones Resells</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu lg:menu-horizontal p-0">
                     <li><Link to='/home'>Home</Link></li>
                     <li><Link to='/blogs'>Blogs</Link></li>
+                    <li><Link to='/contact'>Contact</Link></li>
                     {
                         user?.uid ?
                             <>

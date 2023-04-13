@@ -31,10 +31,8 @@ const Allseler = () => {
     console.log(allselers)
     return (
         <div>
-            <h3>All Seller</h3>
             <div className="overflow-x-auto">
                 <table className="table w-full">
-
                     <thead>
                         <tr>
                             <th>Name</th>
@@ -43,11 +41,9 @@ const Allseler = () => {
                         </tr>
                     </thead>
                     <tbody>
-
                         {
                             allselers.map(seler => <SellerDisplay key={seler._id} seler={seler} handleDelete={handleDelete}></SellerDisplay>)
                         }
-
                     </tbody>
                 </table>
             </div>

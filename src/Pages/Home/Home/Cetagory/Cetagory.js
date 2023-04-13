@@ -2,20 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Cetagory = ({ phone }) => {
-    const { category, _id, image } = phone
+    const { name, _id, image } = phone
     return (
         <div>
-            <div className="card card-compact shadow-xl">
-                <figure><img className='w-[200px] h-[200px]' src={image} alt="Shoes" /></figure>
-                <div className="card-body">
-                    <h2 className="card-title text-orange-500">{category}</h2>
-                    <div className="card-actions justify-end">
-                        <Link to={`/cetagore/${_id}`}>
-                            <button className="btn btn-secondary">See All</button>
-                        </Link>
-                    </div>
+            <Link to={`/cetagore/${_id}`}>
+                <div className='flex flex-col shadow-lg justify-center items-center bg-[#FFFFFF] card mb-[30px] pt-[40px] pb-[40px]'>
+                    <img src={image} alt="" />
+                    <h2 className='text-base pt-4'>{name}</h2>
                 </div>
-            </div>
+            </Link>
         </div>
     );
 };

@@ -4,6 +4,7 @@ import ErrorPage from '../ErrorPages/ErrorPage';
 import DashBoardLayout from '../Layout/DashBoardLayout';
 import Main from '../Layout/Main';
 import Blogs from '../Pages/Blogs/Blogs';
+import Contract from '../Pages/Contract/Contract';
 import AddProducts from '../Pages/DashBoard/AddProducts/AddProducts';
 import AllBuyer from '../Pages/DashBoard/AllBuyer/AllBuyer';
 import Allseler from '../Pages/DashBoard/Allseller/Allseler';
@@ -11,6 +12,7 @@ import MyOrder from '../Pages/DashBoard/MyOrder/MyOrder';
 import MyProducts from '../Pages/DashBoard/MyProducts/MyProducts';
 import Home from '../Pages/Home/Home/Home';
 import Payment from '../Pages/Payments/Payment';
+import DetailsProduct from '../Pages/Phones/DetailsProduct';
 import Phones from '../Pages/Phones/Phones';
 import Login from '../Share/Login/Login';
 import Signup from '../Share/Login/Signup';
@@ -35,6 +37,10 @@ export const router = createBrowserRouter([
                 element: <Blogs></Blogs>
             },
             {
+                path: '/contact',
+                element: <Contract></Contract>
+            },
+            {
                 path: '/login',
                 element: <Login></Login>
             },
@@ -46,6 +52,16 @@ export const router = createBrowserRouter([
                 path: '/cetagore/:id',
                 element: <PrivateRoutes><Phones></Phones></PrivateRoutes>,
                 loader: ({ params }) => fetch(`https://books-reseles-server.vercel.app/cetagori/${params.id}`)
+            },
+            {
+                path: "/details/:id",
+                element: <DetailsProduct></DetailsProduct>,
+                loader: ({ params }) => fetch(`https://books-reseles-server.vercel.app/details/${params.id}`)
+            },
+            {
+                path: '/payment/:id',
+                element: <Payment></Payment>,
+                loader: ({ params }) => fetch(`https://books-reseles-server.vercel.app/details/${params.id}`)
             }
         ]
     },
@@ -78,11 +94,11 @@ export const router = createBrowserRouter([
                 path: '/dashboard/allSeller',
                 element: <AdminRoutes><Allseler></Allseler></AdminRoutes>
             },
-            {
-                path: '/dashboard/payment/:id',
-                element: <Payment></Payment>,
-                loader: ({ params }) => fetch(`https://books-reseles-server.vercel.app/bookings/${params.id}`)
-            }
+            // {
+            //     path: '/dashboard/payment/:id',
+            //     element: <Payment></Payment>,
+            //     loader: ({ params }) => fetch(`https://books-reseles-server.vercel.app/bookings/${params.id}`)
+            // }
 
         ]
     }

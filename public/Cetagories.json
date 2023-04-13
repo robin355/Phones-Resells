@@ -1,0 +1,62 @@
+[
+    {
+        "category": "all-laptop",
+        "image": "https://www.startech.com.bd/image/cache/catalog/category-thumb/laptop-48x48.png",
+        "name": "All Laptop"
+    },
+    {
+        "category": "laptop-bettary",
+        "image": "https://www.startech.com.bd/image/cache/catalog/category-thumb/laptop-battery-01-48x48.png",
+        "name": "Laptop Bettary"
+    },
+    {
+        "category": "all-tv",
+        "image": "https://www.startech.com.bd/image/cache/catalog/category-thumb/tv-48x48.png",
+        "name": "All TV"
+    },
+    {
+        "category": "phone",
+        "image": "https://www.startech.com.bd/image/cache/catalog/category-thumb/mobile-phone-48x48.png",
+        "name": "Phone"
+    },
+    {
+        "category": "tablet",
+        "image": "https://www.startech.com.bd/image/cache/catalog/category-thumb/tablet-48x48.png",
+        "name": "Tablet"
+    },
+    {
+        "category": "action-cemera",
+        "image": "https://www.startech.com.bd/image/cache/catalog/category-thumb/action-camera-48x48.png",
+        "name": "Action Cemera"
+    },
+    {
+        "category": "smart-watch",
+        "image": "https://www.startech.com.bd/image/cache/catalog/category-thumb/smart-watch-48x48.png",
+        "name": "Smart Watch"
+    },
+    {
+        "category": "router",
+        "image": "https://www.startech.com.bd/image/cache/catalog/category-thumb/router-48x48.png",
+        "name": "Router"
+    },
+    {
+        "category": "headphone",
+        "image": "https://www.startech.com.bd/image/cache/catalog/category-thumb/headphone-48x48.png",
+        "name": "HeadPhone"
+    },
+    {
+        "category": "ear-phone",
+        "image": "https://www.startech.com.bd/image/cache/catalog/category-thumb/earphone-48x48.png",
+        "name": "Ear Phone"
+    },
+    {
+        "category": "blue-speakers",
+        "image": "https://www.startech.com.bd/image/cache/catalog/category-thumb/bt-speaker-48x48.png",
+        "name": "Bluetooth Speakers"
+    },
+    {
+        "category": "game-console",
+        "image": "https://www.startech.com.bd/image/cache/catalog/category-thumb/gaming-console-48x48.png",
+        "name": "Gaming Console"
+    }
+]

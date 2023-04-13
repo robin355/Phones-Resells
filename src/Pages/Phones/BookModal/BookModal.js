@@ -1,7 +1,7 @@
 import { React, useContext } from 'react';
 import { AuthContext } from '../../../Context/AuthProvider/AuthProvider';
 import { toast } from 'react-hot-toast';
-const BookModal = ({ name, newPrice, img }) => {
+const BookModal = ({ name, price, img }) => {
     const { user } = useContext(AuthContext)
     const handleForm = (event) => {
         event.preventDefault()
@@ -48,7 +48,7 @@ const BookModal = ({ name, newPrice, img }) => {
                         <input name='userName' type="text" placeholder="Your Name" defaultValue={user?.displayName} readOnly className="input input-bordered w-full" />
                         <input name='email' type="email" placeholder="Your Email" defaultValue={user?.email} readOnly className="input input-bordered w-full" />
                         <input name='iteamName' type="email" placeholder="Your Email" defaultValue={name} readOnly className="input input-bordered w-full" />
-                        <input name='price' type="email" placeholder="Your Email" defaultValue={newPrice} readOnly className="input input-bordered w-full" />
+                        <input name='price' type="email" placeholder="Your Email" defaultValue={price} readOnly className="input input-bordered w-full" />
                         <input name='phone' type="text" placeholder="Your Phone" className="input input-bordered w-full" required />
                         <input name='location' type="text" placeholder="metting Location" className="input input-bordered w-full" required />
                         <input type="submit" className='w-full btn btn-accent' value="Submit" />

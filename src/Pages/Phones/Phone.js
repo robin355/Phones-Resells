@@ -1,35 +1,49 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import BookModal from './BookModal/BookModal';
-
 const Phone = ({ phone }) => {
-    console.log(phone)
-    const { name, price, location, usedYear, newPrice, img } = phone
+    const { name, price, _id, Ram, touch, Motion, battery, version, frequency, processor, Sensitivity, support, storage, operatingSystem, Resolution, img, feature, voltage, BatteryCapacity, cells, warenty } = phone
     return (
-        <div>
-            <div className="card card-compact shadow-xl">
-                <figure><img className='w-[200px] h-[200px]' src={img} alt="Shoes" /></figure>
-                <div className="card-body">
-                    <h2 className="card-title text-orange-500">Name: {name}</h2>
-                    <h2 className="card-title text-orange-500">Original Price:{price}</h2>
-                    <h2 className="card-title text-orange-500">Location: {location}</h2>
-                    <h2 className="card-title text-orange-500">Used Year:{usedYear}</h2>
-                    <h2 className="card-title text-orange-500">ReSells Price: {newPrice}</h2>
-                    <div className="card-actions justify-between">
-                        <label htmlFor="booking-modal" className="btn btn-secondary">Booking Now</label>
-                    </div>
-                </div>
+        <div className='shadow-lg bg-[#FFFFFF]'>
+            <div className='flex flex-col  justify-center items-center'>
+                <img className='w-[200px] h-[200px]' src={img} alt="" />
             </div>
-            {
-                <BookModal
-                    name={name}
-                    newPrice={newPrice}
-                    img={img}
-                >
-                </BookModal>
-            }
+            <div className='p-[30px]'>
+                <Link to={`/details/${_id}`}>
+                    <p className='text-left font-semibold hover:text-red-600'>{name}</p>
+                </Link>
+                <p className='text-left'>{processor}</p>
+                <p className='text-left'>{voltage}</p>
+                <p className='text-left'>{BatteryCapacity}</p>
+                <p className='text-left'>{cells}</p>
+                <p>{Resolution}</p>
+                <p>{operatingSystem}</p>
+                <p className='text-left'>{warenty}</p>
+                <p className='text-left'>{Ram}</p>
+                <p className='text-left'>{storage}</p>
+                <p className='text-left'>{feature}</p>
+                <p className='text-left'>{support}</p>
+                <p className='text-left'>{frequency}</p>
+                <p className='text-left'>{Sensitivity}</p>
+                <p className='text-left'>{version}</p>
+                <p className='text-left'>{battery}</p>
+                <p className='text-left'>{touch}</p>
+                <p className='text-left'>{Motion}</p>
+                <br />
+                <br />
+                <hr />
+                <br />
+                <p className='text-center'>{price}</p>
+                <br />
+                <Link to={`/payment/${_id}`}>
+                    <button className='btn btn-outline btn-accent w-full'>Buy Now</button>
+                </Link>
+
+            </div>
+
 
         </div>
+
+
     );
 };
 
