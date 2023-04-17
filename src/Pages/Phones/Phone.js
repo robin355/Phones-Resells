@@ -34,9 +34,12 @@ const Phone = ({ phone }) => {
                 <br />
                 <p className='text-center'>{price}</p>
                 <br />
-                <Link to={`/payment/${_id}`}>
-                    <button className='btn btn-outline btn-accent w-full'>Buy Now</button>
-                </Link>
+                <div>
+                    <button className='btn btn-outline btn-accent'>Add Product</button>
+                    <Link to={`/payment/${_id}`}>
+                        <button className='btn btn-outline btn-accent ml-5'>Buy Now</button>
+                    </Link>
+                </div>
 
             </div>
 

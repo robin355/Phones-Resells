@@ -1,18 +1,18 @@
 import React from 'react';
-import { Link, useLoaderData } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-const DetailsProduct = () => {
-    const product = useLoaderData();
-    const { name, price, _id, Ram, touch, Motion, battery, version, frequency, processor, Sensitivity, support, storage, operatingSystem, Resolution, img, feature, voltage, BatteryCapacity, cells, warenty } = product;
+const DisplayProducts = ({ product }) => {
+    const { name, img, support, touch, Motion, battery, frequency, version, processor, _id, price, voltage, BatteryCapacity, cells, Resolution, operatingSystem, warenty, Ram, storage, feature, } = product
     return (
         <div>
-            <div className='grid md:grid-cols-2 grid-cols-1 gap-5 p-[80px]'>
-                <div>
-                    <img className='w-[300px]' src={img} alt="" />
+            <div className='shadow-lg bg-[#FFFFFF]'>
+                <div className='flex flex-col  justify-center items-center'>
+                    <img className='w-[200px] h-[200px]' src={img} alt="" />
                 </div>
-                <div>
-                    <p className='text-2xl mb-8'>{name}</p>
-                    <p>Key Featurs</p>
+                <div className='p-[30px]'>
+                    <Link to={`/newProducts/${_id}`}>
+                        <p className='text-left font-semibold hover:text-red-600'>{name}</p>
+                    </Link>
                     <p className='text-left'>{processor}</p>
                     <p className='text-left'>{voltage}</p>
                     <p className='text-left'>{BatteryCapacity}</p>
@@ -22,10 +22,8 @@ const DetailsProduct = () => {
                     <p className='text-left'>{warenty}</p>
                     <p className='text-left'>{Ram}</p>
                     <p className='text-left'>{storage}</p>
-                    <p className='text-left'>{feature}</p>
                     <p className='text-left'>{support}</p>
                     <p className='text-left'>{frequency}</p>
-                    <p className='text-left'>{Sensitivity}</p>
                     <p className='text-left'>{version}</p>
                     <p className='text-left'>{battery}</p>
                     <p className='text-left'>{touch}</p>
@@ -36,18 +34,19 @@ const DetailsProduct = () => {
                     <br />
                     <p className='text-center'>{price}</p>
                     <br />
-                    <div className=''>
+                    <div>
                         <button className='btn btn-outline btn-accent'>Add Product</button>
                         <Link to={`/payment/${_id}`}>
-                            <button className='btn btn-outline btn-accent  ml-5'>Buy Now</button>
+                            <button className='btn btn-outline btn-accent ml-5'>Buy Now</button>
                         </Link>
                     </div>
 
                 </div>
-            </div>
 
+
+            </div>
         </div>
     );
 };
 
-export default DetailsProduct;
+export default DisplayProducts;

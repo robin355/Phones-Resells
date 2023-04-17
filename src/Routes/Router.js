@@ -11,13 +11,14 @@ import Allseler from '../Pages/DashBoard/Allseller/Allseler';
 import MyOrder from '../Pages/DashBoard/MyOrder/MyOrder';
 import MyProducts from '../Pages/DashBoard/MyProducts/MyProducts';
 import Home from '../Pages/Home/Home/Home';
-import Payment from '../Pages/Payments/Payment';
 import DetailsProduct from '../Pages/Phones/DetailsProduct';
 import Phones from '../Pages/Phones/Phones';
 import Login from '../Share/Login/Login';
 import Signup from '../Share/Login/Signup';
 import AdminRoutes from './AdminRoutes';
 import PrivateRoutes from './privateRoutes';
+import Payment from '../Pages/Payments/Payment';
+import ProductDetails from '../Pages/Home/Home/NewArrival/ProductDetails';
 export const router = createBrowserRouter([
     {
         path: '/',
@@ -57,6 +58,11 @@ export const router = createBrowserRouter([
                 path: "/details/:id",
                 element: <DetailsProduct></DetailsProduct>,
                 loader: ({ params }) => fetch(`https://books-reseles-server.vercel.app/details/${params.id}`)
+            },
+            {
+                path: "/newProducts/:id",
+                element: <ProductDetails></ProductDetails>,
+                loader: ({ params }) => fetch(`https://books-reseles-server.vercel.app/newProducts/${params.id}`)
             },
             {
                 path: '/payment/:id',

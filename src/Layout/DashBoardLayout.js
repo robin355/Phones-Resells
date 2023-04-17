@@ -1,7 +1,6 @@
 import { React, useContext, useEffect, useState } from 'react';
 import Navbar from '../Share/Navbar/Navbar';
 import { Link, Outlet } from 'react-router-dom'
-
 import { AuthContext } from '../Context/AuthProvider/AuthProvider';
 import UserAdmin from '../Hook/UserAdmin';
 
@@ -53,6 +52,9 @@ const DashBoardLayout = () => {
                                 <li><Link to='/dashboard/allUser'>All User</Link></li>
                                 <li><Link to='/dashboard/allBuyer'>All Buyer</Link></li>
                                 <li><Link to='/dashboard/allSeller'>All Seller</Link></li>
+                                <li><Link to='/dashboard/orders'>My Order</Link></li>
+                                <li><Link to='/dashboard/AddProduct'>Add products</Link></li>
+                                <li><Link to='/dashboard/myProduct'>My products</Link></li>
                             </>
                         }
                         {

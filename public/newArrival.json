@@ -1,0 +1,60 @@
+[
+    {
+        "name": "Lenovo IdeaPad Slim",
+        "brand": "Lenovo",
+        "price": "৳82,000",
+        "img": "https://www.globalbrand.com.bd/image/cache/catalog/Lenovo%20Laptop/lenovo-ideapad-slim-3i-14-arctic-grey3-600x600.jpg",
+        "processor": "Processor: 11th Gen Intel Core i5-1135G7",
+        "color": "Dark Blue",
+        "Ram": "RAM: 8GB Soldered DDR4",
+        "Display Size": "Display: 15.6-Inch FHD",
+        "storage": "Storage: 512GB SSD",
+        "feature": "Features: Frameless black tile keyboard"
+    },
+    {
+        "name": "Smart SEL-32SV22KS 32 Voice Control ",
+        "Resolution": "1360x768 HD Resolution",
+        "Operating-system": "Android 11",
+        "price": "19,600৳",
+        "RAM": "2GB",
+        "ROM": "16GB",
+        "Screen Size": "65``",
+        "img": "https://www.startech.com.bd/image/cache/catalog/television/smart/sel%E2%80%9032sv22ks/sel%E2%80%9032sv22ks-01-500x500.webp",
+        "Build": "Chromecast Built-in",
+        "warenty": "05 Years Parts & Panel Warranty(visit the nearest OPPO Service Center)"
+    },
+    {
+        "name": "OPPO A57 Smartphone (4/64GB)",
+        "display": "Display: 6.56 HD+ Eye-care Display",
+        "processor": " Mediatek MT6765G Helio G35 (12 nm)",
+        "cemera": "Dual 13+2 MP on Rear, 8MP Front",
+        "feature": "Side Fingerprint, 33W SUPERVOOC",
+        "price": "9,999৳",
+        "img": "https://www.startech.com.bd/image/cache/catalog/mobile/oppo/a57/a57-green-500x500.webp",
+        "ram": "4GB",
+        "warenty": "01-year Official warranty (To claim please visit the nearest OPPO Service Center)"
+    },
+    {
+        "name": "UiiSii HM12 Wired In-Ear Deep Bass",
+        "frequency": "Frequency: 20-20000HZ-",
+        "interface": "Richer Bass",
+        "cable-length": "Cable length: 1.2m",
+        "price": "650৳",
+        "img": "https://www.penguin.com.bd/wp-content/uploads/2019/04/UiiSii-HM-12-In-Ear-Earphone-1.jpg"
+    },
+    {
+        "name": "Tenda AC23 2033mbps AC2100",
+        "support": "Support Beamforming+",
+        "feature": "Support Guest Network,Unify 2.4GHz and 5GHz signals",
+        "price": "4,275৳",
+        "img": "https://www.startech.com.bd/image/cache/catalog/router/tenda/ac8-ac1200/ac8-ac1200-228x228.png"
+    },
+    {
+        "name": "A4Tech HS-9 Stereo Headphone Black",
+        "frequency": "Frequency: 20 Hz - 20 KHz",
+        "Sensitivity": "Sensitivity: 100 Db",
+        "cable-length": "Cable Length: 180 cm",
+        "price": "700৳",
+        "img": "https://www.a4tech.com/alanUpload/colorImg/img/202107/1502461872906684.jpg"
+    }
+]
