@@ -50,24 +50,24 @@ export const router = createBrowserRouter([
                 element: <Signup></Signup>
             },
             {
-                path: '/cetagore/:id',
+                path: '/cetagorie/:id',
                 element: <PrivateRoutes><Phones></Phones></PrivateRoutes>,
-                loader: ({ params }) => fetch(`https://books-reseles-server.vercel.app/cetagori/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:5000/cetagorie/${params?.id}`)
             },
             {
                 path: "/details/:id",
                 element: <DetailsProduct></DetailsProduct>,
-                loader: ({ params }) => fetch(`https://books-reseles-server.vercel.app/details/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:5000/details/${params?.id}`)
             },
             {
-                path: "/newProducts/:id",
+                path: "/newArrival/:id",
                 element: <ProductDetails></ProductDetails>,
-                loader: ({ params }) => fetch(`https://books-reseles-server.vercel.app/newProducts/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:5000/newArrival/${params.id}`)
             },
             {
                 path: '/payment/:id',
                 element: <Payment></Payment>,
-                loader: ({ params }) => fetch(`https://books-reseles-server.vercel.app/details/${params.id}`)
+                loader: ({ params }) => fetch(`http://localhost:5000/details/${params?.id}`)
             }
         ]
     },
@@ -100,11 +100,11 @@ export const router = createBrowserRouter([
                 path: '/dashboard/allSeller',
                 element: <AdminRoutes><Allseler></Allseler></AdminRoutes>
             },
-            // {
-            //     path: '/dashboard/payment/:id',
-            //     element: <Payment></Payment>,
-            //     loader: ({ params }) => fetch(`https://books-reseles-server.vercel.app/bookings/${params.id}`)
-            // }
+            {
+                path: '/dashboard/payment/:id',
+                element: <Payment></Payment>,
+                loader: ({ params }) => fetch(`http://localhost:5000/bookings/${params.id}`)
+            }
 
         ]
     }

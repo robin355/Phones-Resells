@@ -3,8 +3,9 @@ import './NewArrival.css'
 import DisplayProducts from './DisplayProducts';
 const NewArrival = () => {
     const [products, setProducts] = useState([])
+    console.log(products)
     useEffect(() => {
-        fetch('https://books-reseles-server.vercel.app/newProducts')
+        fetch('http://localhost:5000/newArrival')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])

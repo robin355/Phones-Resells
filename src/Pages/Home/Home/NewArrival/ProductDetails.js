@@ -37,7 +37,6 @@ const ProductDetails = () => {
                         <p className='text-center'>{price}</p>
                         <br />
                         <div className=''>
-                            <button className='btn btn-outline btn-accent'>Add Product</button>
                             <Link to={`/payment/${_id}`}>
                                 <button className='btn btn-outline btn-accent  ml-5'>Buy Now</button>
                             </Link>

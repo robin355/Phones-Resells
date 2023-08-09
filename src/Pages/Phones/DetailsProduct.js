@@ -3,6 +3,7 @@ import { Link, useLoaderData } from 'react-router-dom';
 
 const DetailsProduct = () => {
     const product = useLoaderData();
+  
     const { name, price, _id, Ram, touch, Motion, battery, version, frequency, processor, Sensitivity, support, storage, operatingSystem, Resolution, img, feature, voltage, BatteryCapacity, cells, warenty } = product;
     return (
         <div>
@@ -37,7 +38,6 @@ const DetailsProduct = () => {
                     <p className='text-center'>{price}</p>
                     <br />
                     <div className=''>
-                        <button className='btn btn-outline btn-accent'>Add Product</button>
                         <Link to={`/payment/${_id}`}>
                             <button className='btn btn-outline btn-accent  ml-5'>Buy Now</button>
                         </Link>

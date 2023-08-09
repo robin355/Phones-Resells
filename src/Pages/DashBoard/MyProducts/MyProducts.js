@@ -5,7 +5,7 @@ import Product from './Product';
 const MyProducts = () => {
     const [products, setProducts] = useState([])
     useEffect(() => {
-        fetch('https://books-reseles-server.vercel.app/myProduct')
+        fetch('http://localhost:5000/myProduct')
             .then(res => res.json())
             .then(data => {
                 setProducts(data)
@@ -13,7 +13,7 @@ const MyProducts = () => {
 
     }, [])
     const handleDelete = (id) => {
-        fetch(`https://books-reseles-server.vercel.app/myproduct/${id}`, {
+        fetch(`http://localhost:5000/myproduct/${id}`, {
             method: 'DELETE',
 
         })

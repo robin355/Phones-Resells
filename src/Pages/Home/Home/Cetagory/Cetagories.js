@@ -4,7 +4,7 @@ import Cetagory from './Cetagory';
 const Cetagories = () => {
     const [phones, setPhones] = useState([])
     useEffect(() => {
-        fetch('https://books-reseles-server.vercel.app/cetagorie')
+        fetch('http://localhost:5000/cetagorie')
             .then(res => res.json())
             .then(data => {
                 setPhones(data)

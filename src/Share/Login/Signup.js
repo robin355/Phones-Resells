@@ -51,7 +51,7 @@ const Signup = () => {
 
     const handleBuyerUser = (name, email) => {
         const BuyerUser = { name, email };
-        fetch(`https://books-reseles-server.vercel.app/BuyerUsers`, {
+        fetch(`http://localhost:5000/BuyerUsers`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -65,7 +65,7 @@ const Signup = () => {
     }
     const handleAllUser = (name, email) => {
         const AllUser = { name, email };
-        fetch(`https://books-reseles-server.vercel.app/AllUsers`, {
+        fetch(`http://localhost:5000/AllUsers`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -80,7 +80,7 @@ const Signup = () => {
     }
     const handleSellerUser = (name, email) => {
         const user = { name, email };
-        fetch(`https://books-reseles-server.vercel.app/SellerUsers`, {
+        fetch(`http://localhost:5000/SellerUsers`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

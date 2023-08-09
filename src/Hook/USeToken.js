@@ -5,7 +5,7 @@ import { useState } from 'react';
 const USeToken = (email) => {
     const [token, setToken] = useState('')
     useEffect(() => {
-        fetch(`https://books-reseles-server.vercel.app/jwt?email=${email}`)
+        fetch(`http://localhost:5000/jwt?email=${email}`)
             .then(res => res.json())
             .then(data => {
                 if (data.accessToken) {

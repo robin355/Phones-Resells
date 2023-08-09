@@ -24,7 +24,7 @@ const AddProducts = () => {
             usedYear: usedYear
         }
         console.log(AddProduct)
-        fetch('https://books-reseles-server.vercel.app/addProduct', {
+        fetch('http://localhost:5000/addProduct', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

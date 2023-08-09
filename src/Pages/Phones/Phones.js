@@ -7,7 +7,7 @@ const Phones = () => {
     const [phones, setphones] = useState([])
     const data = useLoaderData();
     useEffect(() => {
-        fetch(`https://books-reseles-server.vercel.app/phones?categoryName=${data?.category}`)
+        fetch(`http://localhost:5000/phones?categoryName=${data?.category}`)
             .then(res => res.json())
             .then(data => setphones(data))
     }, [data?.category])

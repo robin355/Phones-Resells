@@ -10,7 +10,7 @@ const DisplayProducts = ({ product }) => {
                     <img className='w-[200px] h-[200px]' src={img} alt="" />
                 </div>
                 <div className='p-[30px]'>
-                    <Link to={`/newProducts/${_id}`}>
+                    <Link to={`/newArrival/${_id}`}>
                         <p className='text-left font-semibold hover:text-red-600'>{name}</p>
                     </Link>
                     <p className='text-left'>{processor}</p>
@@ -19,9 +19,6 @@ const DisplayProducts = ({ product }) => {
                     <p className='text-left'>{cells}</p>
                     <p>{Resolution}</p>
                     <p>{operatingSystem}</p>
-                    <p className='text-left'>{warenty}</p>
-                    <p className='text-left'>{Ram}</p>
-                    <p className='text-left'>{storage}</p>
                     <p className='text-left'>{support}</p>
                     <p className='text-left'>{frequency}</p>
                     <p className='text-left'>{version}</p>
@@ -34,10 +31,9 @@ const DisplayProducts = ({ product }) => {
                     <br />
                     <p className='text-center'>{price}</p>
                     <br />
-                    <div>
-                        <button className='btn btn-outline btn-accent'>Add Product</button>
+                    <div className='flex gap-2'>
                         <Link to={`/payment/${_id}`}>
-                            <button className='btn btn-outline btn-accent ml-5'>Buy Now</button>
+                            <button className='btn btn-outline btn-accent'>Buy Now</button>
                         </Link>
                     </div>
 

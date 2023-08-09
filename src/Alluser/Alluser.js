@@ -8,13 +8,13 @@ const AllUser = () => {
     const { data: Allusers = [], refetch } = useQuery({
         queryKey: ['Allusers'],
         queryFn: async () => {
-            const res = await fetch(`https://books-reseles-server.vercel.app/AllUsers`)
+            const res = await fetch(`http://localhost:5000/AllUsers`)
             const data = res.json()
             return data
         }
     })
     const handleMakeAdmin = (id) => {
-        fetch(`https://books-reseles-server.vercel.app/Allusers/admin/${id}`, {
+        fetch(`http://localhost:5000/Allusers/admin/${id}`, {
             method: 'PUT'
             // headers: {
             //     authorization: `bearer ${localStorage.getItem('accessToken')}`
