@@ -51,7 +51,7 @@ const Signup = () => {
 
     const handleBuyerUser = (name, email) => {
         const BuyerUser = { name, email };
-        fetch(`http://localhost:5000/BuyerUsers`, {
+        fetch(`https://phones-resells-server.vercel.app/BuyerUsers`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -65,7 +65,7 @@ const Signup = () => {
     }
     const handleAllUser = (name, email) => {
         const AllUser = { name, email };
-        fetch(`http://localhost:5000/AllUsers`, {
+        fetch(`https://phones-resells-server.vercel.app/AllUsers`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -80,7 +80,7 @@ const Signup = () => {
     }
     const handleSellerUser = (name, email) => {
         const user = { name, email };
-        fetch(`http://localhost:5000/SellerUsers`, {
+        fetch(`https://phones-resells-server.vercel.app/SellerUsers`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

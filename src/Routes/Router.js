@@ -52,22 +52,22 @@ export const router = createBrowserRouter([
             {
                 path: '/cetagorie/:id',
                 element: <PrivateRoutes><Phones></Phones></PrivateRoutes>,
-                loader: ({ params }) => fetch(`http://localhost:5000/cetagorie/${params?.id}`)
+                loader: ({ params }) => fetch(`https://phones-resells-server.vercel.app/cetagorie/${params?.id}`)
             },
             {
                 path: "/details/:id",
                 element: <DetailsProduct></DetailsProduct>,
-                loader: ({ params }) => fetch(`http://localhost:5000/details/${params?.id}`)
+                loader: ({ params }) => fetch(`https://phones-resells-server.vercel.app/details/${params?.id}`)
             },
             {
                 path: "/newArrival/:id",
                 element: <ProductDetails></ProductDetails>,
-                loader: ({ params }) => fetch(`http://localhost:5000/newArrival/${params.id}`)
+                loader: ({ params }) => fetch(`https://phones-resells-server.vercel.app/newArrival/${params.id}`)
             },
             {
                 path: '/payment/:id',
                 element: <Payment></Payment>,
-                loader: ({ params }) => fetch(`http://localhost:5000/details/${params?.id}`)
+                loader: ({ params }) => fetch(`https://phones-resells-server.vercel.app/details/${params?.id}`)
             }
         ]
     },
@@ -103,7 +103,7 @@ export const router = createBrowserRouter([
             {
                 path: '/dashboard/payment/:id',
                 element: <Payment></Payment>,
-                loader: ({ params }) => fetch(`http://localhost:5000/bookings/${params.id}`)
+                loader: ({ params }) => fetch(`https://phones-resells-server.vercel.app/bookings/${params.id}`)
             }
 
         ]

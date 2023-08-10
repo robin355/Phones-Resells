@@ -22,7 +22,7 @@ const BookModal = ({ name, price, img }) => {
             location: location
         }
         console.log(booking)
-        fetch('http://localhost:5000/bookings', {
+        fetch('https://phones-resells-server.vercel.app/bookings', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

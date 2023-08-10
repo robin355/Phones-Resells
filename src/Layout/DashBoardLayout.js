@@ -11,7 +11,7 @@ const DashBoardLayout = () => {
     const [seller, setSeller] = useState(false)
     const [buyer, setBuyer] = useState(false)
     useEffect(() => {
-        fetch(`http://localhost:5000/seller?email=${user?.email}`)
+        fetch(`https://phones-resells-server.vercel.app/seller?email=${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 if (data) {
@@ -21,7 +21,7 @@ const DashBoardLayout = () => {
 
     }, [user?.email])
     useEffect(() => {
-        fetch(`http://localhost:5000/buyer?email=${user?.email}`)
+        fetch(`https://phones-resells-server.vercel.app/buyer?email=${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 if (data) {
